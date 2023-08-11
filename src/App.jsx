@@ -1,11 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Todo from './components/Todo'
+import Title from './components/Title'
 
 function App() {
   return (
     <div>
-      <h1>My todo list</h1>
+      <Title/>
       <Todo/>
       <Todo/>
       <Todo/>

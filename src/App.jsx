@@ -1,15 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Todo from './components/Todo'
-import Title from './components/Title'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"
+import About from "./pages/About"
+
+
 
 function App() {
   return (
     <div>
-      <Title/>
-      <Todo/>
-      <Todo/>
-      <Todo/>
+     <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+      </Routes>
+     </Router>
       </div>
   );
 }
